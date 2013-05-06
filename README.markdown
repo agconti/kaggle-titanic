@@ -1,7 +1,13 @@
 ##Kaggle-titanic
 This repository contains an IPtyhon Notebook for the Kaggel competition, Titanic Machine Learning From Disaster. The goal of this repo is to provide an example of a competitive analysis for those interested in the field of data analytics or competition on line in Kaggel's Data Science competitions. 
 
+
 Competition Website: http://www.kaggle.com/c/titanic-gettingStarted
 
-##Instructions:
-Download the included IPython Note Book and data files from to competitions to follow along interactively.
+
+###Instructions:
+Download the included IPython NoteBook and data files from to competitions to follow along interactively.
+
+
+###Benchmark Scripts
+To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the orginals provided by Astro Dave but have been completely reworked so that they are easier to understand for new commers

@@ -4,4 +4,4 @@ This repository contains an IPtyhon Notebook for the Kaggel competition, Titanic
 Competition Website: http://www.kaggle.com/c/titanic-gettingStarted
 
 ##Instructions:
-Download the included IPython NoteBook and data files from to competitions to follow along interactively.
+Download the included IPython Note Book and data files from to competitions to follow along interactively.

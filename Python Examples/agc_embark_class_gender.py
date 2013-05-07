@@ -41,7 +41,10 @@ with open('test2.csv', 'rb') as f: # Handels the opening and closing of the file
         data.append(row) 
     data = np.array(data)
 
-print "\nBegin Predictions:"
+# the print statements used throughout are desgined to show what the program is doing
+# once its executed in the terminal. 
+# The \n starts a new line. This allows for more attractive printing.  
+print "\nBegin Predictions:" 
 
 
 # reads in the 'train' file for a comparative result

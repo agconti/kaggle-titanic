@@ -13,6 +13,7 @@ with open('train.csv', 'rb') as f: #deals with opening and closing
 
 #Then convert from a list to an array
 data = np.array(data) 
+
 ###Done With Data Prep############
 
 
@@ -50,36 +51,5 @@ with open('train.csv', 'rb') as f2:
             row[0]='0'
             open_file.writerow(row)
     cop_open_file.close()
-
-
-
-##with open('train.csv', 'rb') as f2:
-##    test_file = csv.reader(open('test.csv', 'rb'))
-##    test_file.next()#skip header
-##    with open("train_results_genderbasedmodelpy.csv", "wb") as f3: #theres no header in this guy
-##        open_file = csv.writer(open("train_results_genderbasedmodelpy.csv", "wb"))
-##        for row in test_file:
-##            if row[2] == 'female':
-##                row.insert(0,'1') #Insert the prediciton at the start of the row
-##                open_file.writerow(row) #Write the row to the file
-##            else:
-##                row.insert(0,'0')
-##                open_file.writerow(row)
-
-###reads in the test file, this outputs results for final submission
-##with open('test.csv', 'rb') as f2:
-##    test_file = csv.reader(open('test.csv', 'rb'))
-##    test_file.next()#skip header
-##    with open("genderbasedmodelpy.csv", "wb") as f3: #theres no header in this guy
-##        open_file = csv.writer(open("genderbasedmodelpy.csv", "wb"))
-##        for row in test_file:
-##            if row[2] == 'female':
-##                row.insert(0,'1') #Insert the prediciton at the start of the row
-##                open_file.writerow(row) #Write the row to the file
-##            else:
-##                row.insert(0,'0')
-##                open_file.writerow(row)
-##
-##
 
 print "Analysis ended"

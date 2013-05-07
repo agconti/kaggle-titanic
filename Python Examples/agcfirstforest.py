@@ -1,8 +1,10 @@
 #RandomForest, non parametric modeling
 #agconti
+
 import numpy as np
 import csv as csv
 from sklearn.ensemble import RandomForestClassifier
+
 ###Variable Dec.
 train_data=[] #Creat a variable called 'train_data'
 test_data=[]
@@ -25,6 +27,7 @@ with open('test.csv', 'rb') as f2:#Load in the test csv file
 #The gender classifyer in colum 3: Male = 1, female = 0:
 train_data[train_data[0::,3]=='male',3] = 1
 train_data[train_data[0::,3]=='female',3] = 0
+
 #embark c=0, s=1, q=2
 train_data[train_data[0::,10] =='C',10] = 0
 train_data[train_data[0::,10] =='S',10] = 1

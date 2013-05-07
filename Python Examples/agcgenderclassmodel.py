@@ -5,21 +5,32 @@ import csv as csv
 import numpy as np
 
 
+# Load in the train.csv file
+# The  'rb' allows for reading only privilages. 
+csv_file_object = csv.reader(open('train.csv', 'rb')) 
 
-csv_file_object = csv.reader(open('train.csv', 'rb')) #Load in the csv file
-header = csv_file_object.next() #Skip the fist line as it is a header
-data=[] #Creat a variable called 'data'
-for row in csv_file_object: #Skip through each row in the csv file
-    data.append(row) #adding each row to the data variable
-data = np.array(data) #Then convert from a list to an array
+# Skip the fist line of the file because it is a header.
+# We only want the data in the file for analysis. 
+header = csv_file_object.next() 
 
-#in order to analyse the price collumn I need to bin up that data
+#Create a bin to store our data
+data = [] 
+
+#Skip through each row in the csv file
+for row in csv_file_object: 
+    #add each row to the data variable
+    data.append(row) 
+
+#Then convert from a list to a NumPy array
+data = np.array(data) 
+
+#in order to analyze the price column I need to bin up that data
 #here are my binning parameters the problem we face is some of the fares are very large
 #So we can either have a lot of bins with nothing in them or we can just absorb some
 #information and just say anythng over 30 is just in the last bin so we add a ceiling
 fare_ceiling = 40
 
-data[data[0::,8].astype(np.float) >= fare_ceiling, 8] = fare_ceiling-1.0
+data[data[0::,8].astype(np.float) >= fare_ceiling, 8] = fare_ceiling - 1.0
 fare_bracket_size = 10
 number_of_price_brackets = fare_ceiling / fare_bracket_size
 number_of_classes = 3 #There were 1st, 2nd and 3rd classes on board

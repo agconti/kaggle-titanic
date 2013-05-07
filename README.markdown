@@ -10,4 +10,4 @@ Download the included IPython NoteBook and data files from to competitions to fo
 
 
 ###Benchmark Scripts
-To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the orginals provided by Astro Dave but have been completely reworked so that they are easier to understand for new commers
+To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the orginals provided by Astro Dave but have been reworked so that they are easier to understand for new commers

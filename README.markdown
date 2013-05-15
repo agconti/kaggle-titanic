@@ -7,7 +7,7 @@ Competition Website: http://www.kaggle.com/c/titanic-gettingStarted
 
 ###Instructions:
 Download the included IPython NoteBook and data files from to competitions to follow along interactively.
-
+To View a static version of the notebook in the comfort of your own web browser click [here](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb)
 
 ###Benchmark Scripts
 To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the orginals provided by Astro Dave but have been reworked so that they are easier to understand for new commers

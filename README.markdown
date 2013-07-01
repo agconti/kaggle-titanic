@@ -2,8 +2,8 @@
 This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Machine Learning From Disaster. The goal of this repository is to provide an example of a competitive analysis for those interested in the field of data analytics or competition on line in Kaggle's Data Science competitions. 
 
 ####Quick Start
-#####_Want to cut to the good stuff?
-#####[ View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb). a static version of the notebook in the comfort of your own web browser. 
+Want to cut to the good stuff?
+[View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
 
 
 ###Kaggle Competition | Titanic Machine Learning from Disaster
@@ -43,7 +43,7 @@ Show a simple example of an analysis of the Titanic disaster in Python using a f
 
 
 
-####Required Libraries:
+####Dependencies:
 * [NumPy](http://www.numpy.org/)
 * [IPython](http://ipython.org/)
 * [Pandas](http://pandas.pydata.org/)

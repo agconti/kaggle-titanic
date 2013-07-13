@@ -55,7 +55,7 @@ Show a simple example of an analysis of the Titanic disaster in Python using a f
 
 ###Installation
 
-To run this notebook interactively, download this repository by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip)
+To run this notebook interactively, download this repository by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip). 
 
 ###Benchmark Scripts
 To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the originals provided by Astro Dave but have been reworked so that they are easier to understand for new comers

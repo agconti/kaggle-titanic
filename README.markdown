@@ -1,9 +1,7 @@
 ###Kaggle-titanic
 This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Machine Learning From Disaster. The goal of this repository is to provide an example of a competitive analysis for those interested in the field of data analytics or competition on line in Kaggle's Data Science competitions. 
 
-####Quick Start
-Want to cut to the good stuff?
-[View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
+####Quick Start [View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
 
 
 ###Kaggle Competition | Titanic Machine Learning from Disaster
@@ -17,7 +15,6 @@ Want to cut to the good stuff?
 >This Kaggle Getting Started Competition provides an ideal starting place for people who may not have a lot of experience in data science and machine learning."
 
 From the competition [homepage](http://www.kaggle.com/c/titanic-gettingStarted).
-
 
 ###Goal for this Notebook:
 Show a simple example of an analysis of the Titanic disaster in Python using a full complement of PyData utilities. This is aimed for those looking to get into the field or those who are already in the field and looking to see an example of an analysis done with Python.
@@ -58,6 +55,6 @@ Show a simple example of an analysis of the Titanic disaster in Python using a f
 To run this notebook interactively, download this repository by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip). 
 
 ###Benchmark Scripts
-To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the originals provided by Astro Dave but have been reworked so that they are easier to understand for new comers
+To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the originals provided by Astro Dave but have been reworked so that they are easier to understand for new comers.
 
 Competition Website: http://www.kaggle.com/c/titanic-gettingStarted

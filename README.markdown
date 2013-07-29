@@ -4,6 +4,7 @@ This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Ma
 ####Quick Start: [View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
 
 
+
 ###Kaggle Competition | Titanic Machine Learning from Disaster
 
 >The sinking of the RMS Titanic is one of the most infamous shipwrecks in history.  On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew.  This sensational tragedy shocked the international community and led to better safety regulations for ships.
@@ -52,7 +53,13 @@ Show a simple example of an analysis of the Titanic disaster in Python using a f
 
 ###Installation
 
-To run this notebook interactively, install the required dependencies, download this repository by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip), and finally run the IPython notebook.
+To run this notebook interactively:
+
+1. Install the required dependencies listed above.
+2. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or use `git clone https://github.com/agconti/kaggle-titanic.git` to download the repository using git.
+3. Navigate to the directory where you unzipped or cloned the repo and execute `ipython notebook --pylab=line` from the command line or terminal.
+ 
+
 ###Benchmark Scripts
 To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the originals provided by Astro Dave but have been reworked so that they are easier to understand for new comers.
 

@@ -3,7 +3,14 @@ This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Ma
 
 ####Quick Start: [View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
 
+###Installation
 
+To run this notebook interactively:
+
+1. Install the required dependencies listed above.
+2. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or use `git clone https://github.com/agconti/kaggle-titanic.git` to download the repository using git.
+3. Navigate to the directory where you unzipped or cloned the repo and execute `ipython notebook --pylab=line` from the command line or terminal.
+ 
 
 ###Kaggle Competition | Titanic Machine Learning from Disaster
 
@@ -50,15 +57,6 @@ Show a simple example of an analysis of the Titanic disaster in Python using a f
 * [StatsModels](http://statsmodels.sourceforge.net/)
 * [Patsy](http://patsy.readthedocs.org/en/latest/)
 * [Matplotlib](http://matplotlib.org/)
-
-###Installation
-
-To run this notebook interactively:
-
-1. Install the required dependencies listed above.
-2. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or use `git clone https://github.com/agconti/kaggle-titanic.git` to download the repository using git.
-3. Navigate to the directory where you unzipped or cloned the repo and execute `ipython notebook --pylab=line` from the command line or terminal.
- 
 
 ###Benchmark Scripts
 To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the originals provided by Astro Dave but have been reworked so that they are easier to understand for new comers.

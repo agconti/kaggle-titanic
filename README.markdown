@@ -3,7 +3,7 @@ This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Ma
 
 ####Quick Start: [View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
 
-###Installation
+###Installation:
 
 To run this notebook interactively:
 

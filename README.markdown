@@ -9,7 +9,7 @@ To run this notebook interactively:
 
 1. Install the required dependencies listed below.
 2. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or use `git clone https://github.com/agconti/kaggle-titanic.git`.
-3. Navigate to the directory where you unzipped or cloned the repo and execute `ipython notebook --pylab=line` from the command line or terminal.
+3. Navigate to the directory where you unzipped or cloned the repo and execute `ipython notebook --pylab=inline` from the command line or terminal.
 
 
 

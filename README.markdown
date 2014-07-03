@@ -1,15 +1,19 @@
 ###Kaggle-titanic
 This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Machine Learning From Disaster. The goal of this repository is to provide an example of a competitive analysis for those interested in getting into the field of data analytics or using python for Kaggle's Data Science competitions .
 
-####Quick Start: [View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser. 
+####Quick Start: [View](http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb) a static version of the notebook in the comfort of your own web browser.
 
 ###Installation:
 
 To run this notebook interactively:
 
-1. Install the required dependencies listed below.
-2. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or use `git clone https://github.com/agconti/kaggle-titanic.git`.
-3. Navigate to the directory where you unzipped or cloned the repo and execute `ipython notebook --pylab=inline` from the command line or terminal.
+1. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or use `git clone https://github.com/agconti/kaggle-titanic.git` from the terminal.
+2. Install [virtualenv](http://virtualenv.readthedocs.org/en/latest/virtualenv.html#installation).
+3. Navigate to the directory where you unzipped or cloned the repo and create a virtual environment with `virturalenv env`
+4. Activate the environment with `source env/bin/activate`
+5. Install the required dependencies with `pip install -r requirements.txt`
+6. Execute `ipython notebook` from the command line or terminal.
+7. When your done deactivate the virtual environment with `deactivate`.
 
 
 
@@ -39,7 +43,7 @@ From the competition [homepage](http://www.kaggle.com/c/titanic-gettingStarted).
 ###Goal for this Notebook:
 Show a simple example of an analysis of the Titanic disaster in Python using a full complement of PyData utilities. This is aimed for those looking to get into the field or those who are already in the field and looking to see an example of an analysis done with Python.
 
-####This Notebook will show basic examples of: 
+####This Notebook will show basic examples of:
 ####Data Handling
 *   Importing Data with Pandas
 *   Cleaning Data
@@ -47,9 +51,9 @@ Show a simple example of an analysis of the Titanic disaster in Python using a f
 
 ####Data Analysis
 *    Supervised Machine learning Techniques:
-    +   Logit Regression Model 
+    +   Logit Regression Model
     +   Plotting results
-*   Unsupervised Machine learning Techniques 
+*   Unsupervised Machine learning Techniques
     +   Support Vector Machine (SVM) using 3 kernels
     +   Basic Random Forest
     +   Plotting results

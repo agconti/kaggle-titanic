@@ -5,23 +5,25 @@ from pandas import DataFrame
 
 def predict(test_data, results, model_name):
     """
-    Returns a NumPy array of independent variable predictions of a test file
+    Return a NumPy array of independent variable predictions of a test file
     basedon your regression of a train file.
 
-    Parameters (test_data. results, model_name)
-    --
-    test_data:
-        should be test data you are trying to predict in a pandas dataframe
-    results:
+    Parameters
+    ----------
+    test_data: pandas dataframe
+        should be test data you are trying to predict
+    results: dict
         should be dict of your models results wrapper and the formula used
         to produce it.
             ie.
             results['Model_Name'] = {[<statsmodels.regression.linear_model.RegressionResultsWrapper> , "Price ~ I(Supply, Demand)] }
-    model_name: should be the name of your model. You can iterate through the results dict.
+    model_name: str
+        should be the name of your model. You can iterate through the results dict.
 
     Returns
-    --
-    Predictions in a flat NumPy array.
+    -------
+    NumPy array
+        Predictions in a flat NumPy array.
     """
     model_params = DataFrame(results[model_name][0].params)
     formula = results[model_name][1]
@@ -30,14 +32,16 @@ def predict(test_data, results, model_name):
     yt, xt = dmatrices(formula, data=test_data, return_type='dataframe')
 
     # remove extraneous features for efficiency
-    to_drop = list()
-    to_drop[:] = []
-    for c in xt.columns:
-        if c not in model_params.index:
-            to_drop.append(c)
+    # for c in xt.columns:
+    #     if c not in model_params.index:
+    #         to_drop.append(c)
+
+    to_drop = list((c if c not in model_params.index for c in xt.columns))
     xt = xt.drop(to_drop, axis=1)
 
-    to_drop[:] = []
+
+    to_drop = list(c if c not in xt.columns for c in model_params.index))
+
     for c in model_params.index:
         if c not in xt.columns:
             to_drop.append(c)

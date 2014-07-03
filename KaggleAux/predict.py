@@ -42,11 +42,11 @@ def predict(test_data, results, model_name):
     #     if c not in model_params.index:
     #         to_drop.append(c)
 
-    to_drop = list((c if c not in model_params.index for c in xt.columns))
+    to_drop = list((c for c in xt.columns if c not in model_params.index))
     xt = xt.drop(to_drop, axis=1)
 
 
-    to_drop = list(c if c not in xt.columns for c in model_params.index))
+    to_drop = list((c for c in model_params.index if c not in xt.columns))
 
     for c in model_params.index:
         if c not in xt.columns:

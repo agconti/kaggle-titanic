@@ -24,6 +24,12 @@ def predict(test_data, results, model_name):
     -------
     NumPy array
         Predictions in a flat NumPy array.
+
+    Example
+    -------
+    results = {'Logit': [<statsmodels.discrete.discrete_model.BinaryResultsWrapper at 0x117896650>,
+               'survived ~ C(pclass) + C(sex) + age + sibsp  + C(embarked)']}
+    compared_resuts = predict(test_data, results, 'Logit')
     """
     model_params = DataFrame(results[model_name][0].params)
     formula = results[model_name][1]

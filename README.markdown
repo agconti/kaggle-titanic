@@ -14,7 +14,7 @@ To run this notebook interactively:
 4. Activate the environment with `source env/bin/activate`
 5. Install the required dependencies with `pip install -r requirements.txt`.
 6. Execute `ipython notebook` from the command line or terminal.
-7. When your done, deactivate the virtual environment with `deactivate`.
+7. When you're done deactivate the virtual environment with `deactivate`.
 
 
 ####Dependencies:

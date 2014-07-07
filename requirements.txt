@@ -1,3 +1,5 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
 backports.ssl-match-hostname==3.4.0.2
 gnureadline==6.3.3
 ipython==2.1.0
@@ -10,6 +12,7 @@ patsy==0.2.1
 pyparsing==2.0.2
 python-dateutil==2.2
 pytz==2014.4
+pyzmq==14.3.1
 scikit-learn==0.14.1
 scipy==0.14.0
 six==1.7.3

@@ -29,36 +29,96 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="kaggle-titanic" class="anchor" href="#kaggle-titanic"><span class="octicon octicon-link"></span></a>Kaggle-titanic</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This is a tutorial in an IPython Notebook for the Kaggle competition, Titanic Machine Learning From Disaster. The goal of this repository is to provide an example of a competitive analysis for those interested in getting into the field of data analytics or using python for Kaggle's Data Science competitions .</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Quick Start: <a href="http://nbviewer.ipython.org/urls/raw.github.com/agconti/kaggle-titanic/master/Titanic.ipynb">View</a> a static version of the notebook in the comfort of your own web browser.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>To run this notebook interactively:</p>
+
+<ol>
+<li>Download this repository in a zip file by clicking on this <a href="https://github.com/agconti/kaggle-titanic/archive/master.zip">link</a> or execute this from the terminal:
+<code>git clone https://github.com/agconti/kaggle-titanic.git</code>
+</li>
+<li>Install <a href="http://virtualenv.readthedocs.org/en/latest/virtualenv.html#installation">virtualenv</a>.</li>
+<li>Navigate to the directory where you unzipped or cloned the repo and create a virtual environment with <code>virturalenv env</code>.</li>
+<li>Activate the environment with <code>source env/bin/activate</code>
+</li>
+<li>Install the required dependencies with <code>pip install -r requirements.txt</code>.</li>
+<li>Execute <code>ipython notebook</code> from the command line or terminal.</li>
+<li>When you're done deactivate the virtual environment with <code>deactivate</code>.</li>
+</ol><h4>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies:</h4>
+
+<ul>
+<li><a href="http://www.numpy.org/">NumPy</a></li>
+<li><a href="http://ipython.org/">IPython</a></li>
+<li><a href="http://pandas.pydata.org/">Pandas</a></li>
+<li><a href="http://scikit-learn.org/stable/">SciKit-Learn</a></li>
+<li><a href="http://www.scipy.org/">SciPy</a></li>
+<li><a href="http://statsmodels.sourceforge.net/">StatsModels</a></li>
+<li><a href="http://patsy.readthedocs.org/en/latest/">Patsy</a></li>
+<li><a href="http://matplotlib.org/">Matplotlib</a></li>
+</ul><h3>
+<a name="kaggle-competition--titanic-machine-learning-from-disaster" class="anchor" href="#kaggle-competition--titanic-machine-learning-from-disaster"><span class="octicon octicon-link"></span></a>Kaggle Competition | Titanic Machine Learning from Disaster</h3>
+
+<blockquote>
+<p>The sinking of the RMS Titanic is one of the most infamous shipwrecks in history.  On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew.  This sensational tragedy shocked the international community and led to better safety regulations for ships.</p>
+
+<p>One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew.  Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.</p>
+
+<p>In this contest, we ask you to complete the analysis of what sorts of people were likely to survive.  In particular, we ask you to apply the tools of machine learning to predict which passengers survived the tragedy.</p>
+
+<p>This Kaggle Getting Started Competition provides an ideal starting place for people who may not have a lot of experience in data science and machine learning."</p>
+</blockquote>
+
+<p>From the competition <a href="http://www.kaggle.com/c/titanic-gettingStarted">homepage</a>.</p>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="goal-for-this-notebook" class="anchor" href="#goal-for-this-notebook"><span class="octicon octicon-link"></span></a>Goal for this Notebook:</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Show a simple example of an analysis of the Titanic disaster in Python using a full complement of PyData utilities. This is aimed for those looking to get into the field or those who are already in the field and looking to see an example of an analysis done with Python.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h4>
+<a name="this-notebook-will-show-basic-examples-of" class="anchor" href="#this-notebook-will-show-basic-examples-of"><span class="octicon octicon-link"></span></a>This Notebook will show basic examples of:</h4>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h4>
+<a name="data-handling" class="anchor" href="#data-handling"><span class="octicon octicon-link"></span></a>Data Handling</h4>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li>  Importing Data with Pandas</li>
+<li>  Cleaning Data</li>
+<li>  Exploring Data through Visualizations with Matplotlib</li>
+</ul><h4>
+<a name="data-analysis" class="anchor" href="#data-analysis"><span class="octicon octicon-link"></span></a>Data Analysis</h4>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<ul>
+<li>   Supervised Machine learning Techniques:
+
+<ul>
+<li>  Logit Regression Model</li>
+<li>  Plotting results</li>
+<li>  Support Vector Machine (SVM) using 3 kernels</li>
+<li>  Basic Random Forest</li>
+<li>  Plotting results</li>
+</ul>
+</li>
+</ul><h4>
+<a name="valuation-of-the-analysis" class="anchor" href="#valuation-of-the-analysis"><span class="octicon octicon-link"></span></a>Valuation of the Analysis</h4>
+
+<ul>
+<li>  K-folds cross validation to valuate results locally</li>
+<li>  Output the results from the IPython Notebook to Kaggle</li>
+</ul><h3>
+<a name="benchmark-scripts" class="anchor" href="#benchmark-scripts"><span class="octicon octicon-link"></span></a>Benchmark Scripts</h3>
+
+<p>To find the basic scripts for the competition benchmarks look in the "Python Examples" folder. These scripts are based on the originals provided by Astro Dave but have been reworked so that they are easier to understand for new comers.</p>
+
+<p>Competition Website: <a href="http://www.kaggle.com/c/titanic-gettingStarted">http://www.kaggle.com/c/titanic-gettingStarted</a></p>
         </section>
 
         <aside id="sidebar">

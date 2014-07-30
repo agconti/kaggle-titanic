@@ -1,15 +1,14 @@
-from patsy import dmatrices
 import numpy as np
 from pandas import DataFrame
+from patsy import dmatrices
 
 
-def get_dataframe_intersection(df, comparator1,comparator2):
+def get_dataframe_intersection(df, comparator1, comparator2):
     """
     Return a dataframe with only the columns found in a comparative dataframe.
 
     Parameters
     ----------
-
     comparator1: DataFrame
         DataFrame to preform comparison on.
     comparator2: DataFrame
@@ -31,7 +30,6 @@ def get_dataframes_intersections(df1, comparator1, df2, comparator2):
 
     Parameters
     ----------
-
     comparator1: DataFrame
         DataFrame to preform comparison on.
     comparator2: DataFrame
@@ -50,19 +48,21 @@ def get_dataframes_intersections(df1, comparator1, df2, comparator2):
 
 def predict(test_data, results, model_name):
     """
-    Return a NumPy array of independent variable predictions of a test file
-    basedon your regression of a train file.
+    Return predictions of based on model resutls.
 
     Parameters
     ----------
     test_data: DataFrame
         should be test data you are trying to predict
-    results: Dict
+    results: dict
         should be dict of your models results wrapper and the formula used
         to produce it.
             ie.
-            results['Model_Name'] = {[<statsmodels.regression.linear_model.RegressionResultsWrapper> , "Price ~ I(Supply, Demand)] }
-    model_name: Str
+            results['Model_Name'] = {
+            [<statsmodels.regression.linear_model.RegressionResultsWrapper> , 
+            "Price ~ I(Supply, Demand)]
+            }
+    model_name: str
         should be the name of your model. You can iterate through the results dict.
 
     Returns
@@ -75,15 +75,15 @@ def predict(test_data, results, model_name):
     results = {'Logit': [<statsmodels.discrete.discrete_model.BinaryResultsWrapper at 0x117896650>,
                'survived ~ C(pclass) + C(sex) + age + sibsp  + C(embarked)']}
     compared_resuts = predict(test_data, results, 'Logit')
+
     """
     model_params = DataFrame(results[model_name][0].params)
     formula = results[model_name][1]
 
-    # Create reg friendly test dataframe
+    # Create regression friendly test DataFrame
     yt, xt = dmatrices(formula, data=test_data, return_type='dataframe')
     xt, model_params = get_dataframes_intersections(xt, xt.columns,
                                                     model_params, model_params.index)
-
     # Convert to NumPy arrays for performance
     model_params = np.asarray(model_params)
     yt = np.asarray(yt)
@@ -99,5 +99,4 @@ def predict(test_data, results, model_name):
     # Multiply matrix together
     predictions = np.multiply(xt, model_array)
     predictions = np.sum(predictions, axis=1)
-
     return predictions

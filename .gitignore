@@ -4,6 +4,9 @@
 #env
 env/
 
+#Python
+*.pyc
+
 #IPython
 .ipynb_checkpoints/
 

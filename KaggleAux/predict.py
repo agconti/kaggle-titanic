@@ -1,3 +1,8 @@
+import numpy as np
+from pandas import DataFrame
+from patsy import dmatrices
+
+
 def get_dataframe_intersection(df, comparator1, comparator2):
     """
     Return a dataframe with only the columns found in a comparative dataframe.
@@ -53,7 +58,10 @@ def predict(test_data, results, model_name):
         should be dict of your models results wrapper and the formula used
         to produce it.
             ie.
-            results['Model_Name'] = {[<statsmodels.regression.linear_model.RegressionResultsWrapper> , "Price ~ I(Supply, Demand)] }
+            results['Model_Name'] = {
+            [<statsmodels.regression.linear_model.RegressionResultsWrapper> , 
+            "Price ~ I(Supply, Demand)]
+            }
     model_name: str
         should be the name of your model. You can iterate through the results dict.
 

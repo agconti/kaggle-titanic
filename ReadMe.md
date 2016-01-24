@@ -10,7 +10,7 @@ To run this notebook interactively:
 1. Download this repository in a zip file by clicking on this [link](https://github.com/agconti/kaggle-titanic/archive/master.zip) or execute this from the terminal:
 `git clone https://github.com/agconti/kaggle-titanic.git`
 2. Install [virtualenv](http://virtualenv.readthedocs.org/en/latest/installation.html).
-3. Navigate to the directory where you unzipped or cloned the repo and create a virtual environment with `virturalenv env`.
+3. Navigate to the directory where you unzipped or cloned the repo and create a virtual environment with `virtualenv env`.
 4. Activate the environment with `source env/bin/activate`
 5. Install the required dependencies with `pip install -r requirements.txt`.
 6. Execute `ipython notebook` from the command line or terminal.

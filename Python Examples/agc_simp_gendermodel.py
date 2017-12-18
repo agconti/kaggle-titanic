@@ -15,17 +15,17 @@ with open('train.csv', 'rb') as f: # deals with opening and closing
 data = np.array(data) 
 
 #Separates data by gender
-women_only_stats = data[0::,3] == "female" 
-men_only_stats = data[0::,3] != "female"
+women_only_stats = data[0::,4] == "female" 
+men_only_stats = data[0::,4] != "female"
 
 
 # Calculates survival proportions by gender
-women_onboard = data[women_only_stats,0].astype(np.float)
-men_onboard = data[men_only_stats,0].astype(np.float)
+women_onboard = data[women_only_stats,1].astype(np.float)
+men_onboard = data[men_only_stats,1].astype(np.float)
 
 proportion_women_survived = np.sum(women_onboard) / np.size(women_onboard)
 proportion_men_survived = np.sum(men_onboard) / np.size(men_onboard)
-proportion_survivors =  (np.sum(data[0::,0].astype(np.float)))/(np.size(data[0::,0].astype(np.float)))
+proportion_survivors =  (np.sum(data[0::,1].astype(np.float)))/(np.size(data[0::,1].astype(np.float)))
 
                          
 # Prints proportions
